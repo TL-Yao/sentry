@@ -307,6 +307,6 @@ notifications:
     on_start: always
     on_cancel: always
     on_error: always
- after_success:
+after_success:
   - bash <(curl -s https://copilot.blackducksoftware.com/ci/travis/scripts/upload)
   - bash <(curl -s https://scripts.scantist.com/staging/ci-travis.sh)
